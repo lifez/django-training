@@ -5,7 +5,7 @@ from .models import Post
 class CreatePostView(CreateView):
     model = Post
     template_name = 'post_form.html'
-    fields = ['text']
+    fields = ['text', 'image']
     success_url = '/'
 
     def form_valid(self, form):
